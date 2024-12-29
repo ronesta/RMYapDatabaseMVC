@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4ABFFD8CF476C14E64BC09D6 /* Pods_RMYapDatabaseMVC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9BDE3599AD1591D56506F5A /* Pods_RMYapDatabaseMVC.framework */; };
 		E1422E982D219AAE00911B8B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E1422E972D219AAE00911B8B /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52A47B6A79F2EFBC62669E41 /* Pods-RMYapDatabaseMVC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMYapDatabaseMVC.release.xcconfig"; path = "Target Support Files/Pods-RMYapDatabaseMVC/Pods-RMYapDatabaseMVC.release.xcconfig"; sourceTree = "<group>"; };
+		5469BEFECDABDFFE2D35C35F /* Pods-RMYapDatabaseMVC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMYapDatabaseMVC.debug.xcconfig"; path = "Target Support Files/Pods-RMYapDatabaseMVC/Pods-RMYapDatabaseMVC.debug.xcconfig"; sourceTree = "<group>"; };
+		C9BDE3599AD1591D56506F5A /* Pods_RMYapDatabaseMVC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RMYapDatabaseMVC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1422E7E2D219A8800911B8B /* RMYapDatabaseMVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RMYapDatabaseMVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -41,17 +45,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1422E982D219AAE00911B8B /* SnapKit in Frameworks */,
+				4ABFFD8CF476C14E64BC09D6 /* Pods_RMYapDatabaseMVC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		366157683BC6B4BABB04955B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5469BEFECDABDFFE2D35C35F /* Pods-RMYapDatabaseMVC.debug.xcconfig */,
+				52A47B6A79F2EFBC62669E41 /* Pods-RMYapDatabaseMVC.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		46CB4F28DF5DBCBF0725081C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9BDE3599AD1591D56506F5A /* Pods_RMYapDatabaseMVC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E1422E752D219A8800911B8B = {
 			isa = PBXGroup;
 			children = (
 				E1422E802D219A8800911B8B /* RMYapDatabaseMVC */,
 				E1422E7F2D219A8800911B8B /* Products */,
+				366157683BC6B4BABB04955B /* Pods */,
+				46CB4F28DF5DBCBF0725081C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,9 +94,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1422E912D219A8A00911B8B /* Build configuration list for PBXNativeTarget "RMYapDatabaseMVC" */;
 			buildPhases = (
+				6201A85EC93B1A27D76CC6E0 /* [CP] Check Pods Manifest.lock */,
 				E1422E7A2D219A8800911B8B /* Sources */,
 				E1422E7B2D219A8800911B8B /* Frameworks */,
 				E1422E7C2D219A8800911B8B /* Resources */,
+				700AC87D5638296B1EB17240 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +162,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6201A85EC93B1A27D76CC6E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RMYapDatabaseMVC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		700AC87D5638296B1EB17240 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RMYapDatabaseMVC/Pods-RMYapDatabaseMVC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RMYapDatabaseMVC/Pods-RMYapDatabaseMVC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RMYapDatabaseMVC/Pods-RMYapDatabaseMVC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E1422E7A2D219A8800911B8B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -149,6 +217,7 @@
 /* Begin XCBuildConfiguration section */
 		E1422E922D219A8A00911B8B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5469BEFECDABDFFE2D35C35F /* Pods-RMYapDatabaseMVC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -180,6 +249,7 @@
 		};
 		E1422E932D219A8A00911B8B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52A47B6A79F2EFBC62669E41 /* Pods-RMYapDatabaseMVC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -246,7 +316,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -309,7 +379,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
