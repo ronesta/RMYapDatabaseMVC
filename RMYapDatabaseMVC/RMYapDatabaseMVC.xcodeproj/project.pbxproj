@@ -22,7 +22,7 @@
 		E1422E902D219A8A00911B8B /* Exceptions for "RMYapDatabaseMVC" folder in "RMYapDatabaseMVC" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				Resources/Info.plist,
 			);
 			target = E1422E7D2D219A8800911B8B /* RMYapDatabaseMVC */;
 		};
@@ -99,6 +99,7 @@
 				E1422E7B2D219A8800911B8B /* Frameworks */,
 				E1422E7C2D219A8800911B8B /* Resources */,
 				700AC87D5638296B1EB17240 /* [CP] Embed Pods Frameworks */,
+				E1A815712D2D229300A199A4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -202,6 +203,26 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RMYapDatabaseMVC/Pods-RMYapDatabaseMVC-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E1A815712D2D229300A199A4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -225,7 +246,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QYDD73WSAD;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RMYapDatabaseMVC/Info.plist;
+				INFOPLIST_FILE = RMYapDatabaseMVC/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -257,7 +278,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QYDD73WSAD;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RMYapDatabaseMVC/Info.plist;
+				INFOPLIST_FILE = RMYapDatabaseMVC/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
